@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchPro Autocomplete</title>
+
+    <style>
+      /* Reset margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+      }
+
+      #root {
+        background: #ffffff;
+        color: #222;
+        width: 90%;
+        max-width: 400px;
+        padding: 25px 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      }
+
+      footer {
+        margin-top: 30px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+        font-style: italic;
+      }
+
+      /* Optional: add a fade-in for #root */
+      #root {
+        opacity: 0;
+        animation: fadeIn 1s forwards 0.3s;
+      }
+
+      @keyframes fadeIn {
+        to {opacity: 1;}
+      }
+  
+    
+    
+    
+    
+    
+    
+    
+  #root input[type="text"] {
+  width: 100%;              /* full width inside the container */
+  padding: 15px 20px;       /* bigger padding for height */
+  font-size: 1.2rem;        /* bigger font size */
+  border: 2px solid #222;   /* thicker black border */
+  border-radius: 10px;      /* rounded corners */
+  outline: none;            /* remove default outline */
+  box-sizing: border-box;   /* include padding in width */
+  transition: border-color 0.3s ease;
+}
+
+#root input[type="text"]:focus {
+  border-color: #0066ff;    /* blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 102, 255, 0.5);
+}
+
+  
+    </style>
+  </head>
+  <body>
+    <header>
+      
+      <header style="display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 20px;">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="36" height="36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fff;">
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+  <h1>SearchPro Autocomplete</h1>
+</header>
+
+    </header>
+
+    <div id="root"></div>
+
+    <footer>Powered by React & Vite • Created by Varshini</footer>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
